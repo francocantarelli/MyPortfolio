@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Ubuntu:wght@300&display=swap');
 
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -8,62 +13,46 @@
     border: none;
 }
 
-img{
-    width: 100%;
-    display: flex;
-}
-
-a{
-    text-decoration: none;
-}
-
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #18181b;
+    height: 16rem;
+    background-image: radial-gradient(circle, rgba(203, 213, 225, 0.205) 2px, #ffffff00 2px);
+    background-size: 2.5rem 2.5rem;
+    background-position: center center;
 }
 
-nav{
-    max-width: 1400px;
-    margin: auto;
-    padding: 0rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+/* Estilos del navbar */
+nav {
+    padding: 30px 10px;
 }
 
-.nav-foto{
-    max-width: 150px;
-    padding-top: 30px;
-}
-
-.nav-links{
+.nav-links {
     list-style: none;
     display: flex;
-    align-items: center;
-    gap: 3rem;
+    justify-content: center;
 }
 
-.link a{
-    position: relative;
-    padding-bottom: 0.5rem;
-    color: white;
+.nav-links li {
+    margin-right: 100px;
 }
 
-.link a::after{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(255, 108, 54);
-    transition: all 0.5s ease;
+.nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(175, 175, 175);
+    transition: 0.5s;
 }
 
-.link a:hover::after{
-    width: 100%;
-} 
+.nav-links a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline rgb(255, 68, 0) ;
+}
+
+img{
+    width: 80%;
+    display: flex;
+}
 
 .contenedor{
     max-width: 1200px;
@@ -71,16 +60,65 @@ nav{
     padding: 5rem 2rem;
 }
 
-.textoColor{
+.sombra{
     position: absolute;
-    box-shadow: 0 0 1000px 50px #fa4f00
+    box-shadow: 0 0 500px 60px #fa4f00;
+    z-index: -100;
 }
 
 header{
     position: relative;
     padding-top: 2rem;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 }
+
+header .contenido h1{
+    color:white;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 4rem; /*hace un espacio entre la parte de arriba */
+    -webkit-animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both
+}
+@-webkit-keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+
+.contenido .designer{
+    padding-bottom: 20px;
+}
+
+header .contenido h1 span{
+    background: linear-gradient(coral, red, rgb(255, 153, 0), rgb(255, 166, 0), rgb(255, 174, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 2000px 2000px;
+    animation: rgb 15s infinite linear;
+}
+@keyframes rgb{
+    0%{
+        background-position:0% 0%;
+    }
+
+    25%{
+        background-position:0% 100%;
+    }
+
+    50%{
+        background-position:100% 100%;
+    }
+
+    75%{
+        background-position:100% 0%;
+    }
+
+    100%{
+        background-position:0% 0%;
+    }
+}
+
+.contenido p{
+    color: white;
+}
+
