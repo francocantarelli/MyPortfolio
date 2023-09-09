@@ -2,7 +2,6 @@
 
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 *{
@@ -42,16 +41,12 @@ nav {
     font-weight: 600;
     color: rgb(175, 175, 175);
     transition: 0.5s;
+    font-size: 15px;
 }
 
 .nav-links a:hover {
     color: rgb(255, 255, 255);
     text-decoration: underline rgb(255, 68, 0) ;
-}
-
-img{
-    width: 80%;
-    display: flex;
 }
 
 .contenedor{
@@ -120,5 +115,48 @@ header .contenido h1 span{
 
 .contenido p{
     color: white;
+    padding-right: 150px;
+    text-align: justify;
 }
+
+.contenido p a{
+    text-decoration: none;
+    color: rgb(255, 115, 0);
+    transition: 0.5s;
+}
+
+.contenido p a:hover{
+    color: orange;
+}
+
+.image img{
+    width: 90%;
+    display: flex;
+    position: static;
+    padding-left: 30px;
+}
+
+#section-2{
+    padding-bottom: 100px;
+}
+
+#section-2 h2{
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.box-sobremi p{
+    color: white;
+    text-align: justify;
+    padding-top: 20px;
+}
+
+.box-sobremi{
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
 
