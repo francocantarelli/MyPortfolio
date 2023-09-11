@@ -321,7 +321,8 @@ footer img {
 }
 
 .icons a:hover{
-    color: rgb(207, 207, 207);
+    color: rgb(170, 170, 170);
+    transform: scale(1.2);
 }
 
 .icons{
