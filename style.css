@@ -330,3 +330,146 @@ footer img {
     justify-content: center;
     transform: translate(0, 320px)
 }
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    
+    nav {
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-direction: row; /* Cambiamos la dirección de flex a horizontal */
+        justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        transform: translate(-18px);
+    }
+
+
+    header {
+        flex-direction: column;
+        gap: 2rem;
+        transform: translateY(-25px);
+    }
+
+    header .contenido h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .contenido p {
+        padding: 0 1rem;
+        text-align: center;
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    .image img {
+        width: 80%;
+        transform: translate(25px);
+    }
+
+    #section-2 h2{
+        transform: translateY(-85px);
+    }
+
+    .box-sobremi{
+        transform: translateY(-130px);
+    }
+    
+    .caja-fotos{
+        transform: translateY(-60px);
+    }
+
+    .masfotos{
+        transform: translateY(-60px);
+    }
+
+    .mover-btn{
+        transform: translateY(-60px);
+    }
+
+    #section-4{
+        transform: translateY(100px);
+    }
+
+    #letras-footer{
+        transform: translateY(70px);
+    }
+
+    .icons{
+        transform: translateY(100px);
+    }
+}
+
+@media (max-width: 1000px){
+   
+    nav {
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-direction: row; /* Cambiamos la dirección de flex a horizontal */
+        justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        transform: translate(-18px);
+    }
+
+
+    header {
+        flex-direction: column;
+        gap: 2rem;
+        transform: translateY(-25px);
+    }
+
+    header .contenido h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .contenido p {
+        padding: 0 1rem;
+        text-align: center;
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    #section-2 h2{
+        transform: translateY(-85px);
+    }
+
+    .box-sobremi{
+        transform: translateY(-130px);
+    }
+    
+    .caja-fotos{
+        transform: translateY(-60px);
+    }
+
+    .masfotos{
+        transform: translateY(-60px);
+    }
+
+    .mover-btn{
+        transform: translateY(-60px);
+    }
+
+    #section-4{
+        transform: translateY(100px);
+    }
+
+    #letras-footer{
+        transform: translateY(70px);
+    }
+
+    .icons{
+        transform: translateY(100px);
+    }
+}
+
